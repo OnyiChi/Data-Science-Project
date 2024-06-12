@@ -44,8 +44,16 @@ Various plots are created to understand the distribution of different attributes
 
 ### Distribution Plots
 
-### Count Plot for Gender
+![Example Image](mall_seg_images/dist_plot_of_age_ss_ai.png)
+
+
+###  Gender Distribution
+
+![Example Image](mall_seg_images/genderdist_mallseg.png)
+
 ### Violin Plots
+
+![Example Image](mall_seg_images/violin_mallseg.png)
 
 ## Customer Segmentation
 
@@ -59,11 +67,20 @@ We use the K-Means clustering algorithm to segment customers into different grou
 
 #### Clustering Based on Age and Spending Score
 
+![Example Image](mall_seg_images/age_spendscore_mallseg.png)
+
 #### Clustering Based on Annual Income and Spending Score
+
+![Example Image](mall_seg_images/annualinc_spendscore_mallseg.png)
 
 ## Results
 
 After clustering, we can visualize the segmented customer groups. The clustering results provide insights into different customer segments based on their age, annual income, and spending scores.
+
+![image](https://github.com/OnyiChi/Data-Science-Project/assets/144718639/88fb99d1-49ff-48b6-b7dd-58cc0dcc01d2)
+
+
+
 
 ## License
 
