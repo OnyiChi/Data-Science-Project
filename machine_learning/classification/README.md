@@ -4,16 +4,16 @@ This repository contains code for analyzing and reporting on breast cancer data.
 
 ## Introduction
 
-Understanding breast cancer trends and factors influencing its occurrence and outcomes is crucial for healthcare professionals and policymakers. This project utilizes data analysis techniques to investigate patterns in breast cancer incidence, risk factors, and survival rates.
+Breast cancer is a significant health concern worldwide. Early detection and classification of breast cancer tumors are crucial for effective treatment. In this report, we explore the classification of breast cancer using logistic regression. Logistic regression is a powerful statistical technique commonly used for binary classification tasks.
 
 ## Dataset
 
-The dataset used in this project is `Breast_Cancer_Data.csv`, which includes the following columns:
+The dataset used in this project is the Breast Cancer Wisconsin (Diagnostic) dataset from scikit-learn's built-in datasets. This dataset contains 569 instances and 30 features extracted from breast mass images, along with the corresponding binary labels indicating malignant or benign tumors.  The dataset includes the following columns:
 
 - ID: Unique identifier for each patient.
 - Diagnosis: Indicates whether the tumor is malignant (M) or benign (B).
 - Other features: Attributes describing characteristics of the tumor, such as radius, texture, perimeter, area, smoothness, compactness, concavity, concave points, symmetry, and fractal dimension.
-- 
+  
 
 ## Dependencies
 
@@ -35,7 +35,6 @@ The data preprocessing steps include:
 1. Importing the dataset.
 2. Renaming columns for consistency.
 3. Checking for missing values.
-4. Encoding categorical variables (if any).
 
 ## Data Visualization
 
@@ -43,16 +42,21 @@ Various plots are created to understand the distribution of different attributes
 
 ### Distribution Plots
 
-![Example Image](mall_seg_images/dist_plot_of_age_ss_ai.png)
+![image](https://github.com/OnyiChi/Data-Science-Project/assets/144718639/6d9226ef-3324-4c4e-953f-c71e29f9c385)
 
+357 benign cases ---> 1
+
+212 malignant cases ---> 0
 
 ###  Correlation Heatmap
 
-![Example Image](mall_seg_images/genderdist_mallseg.png)
+![image](https://github.com/OnyiChi/Data-Science-Project/assets/144718639/14b0c479-c11b-4370-8f94-861ad96564ae)
+
 
 ### Pair Plot
 
-![Example Image](mall_seg_images/violin_mallseg.png)
+![image](https://github.com/OnyiChi/Data-Science-Project/assets/144718639/55ff0c15-3a05-4f69-89ee-05a6974f5d49)
+
 
 ## Analysis
 
@@ -64,13 +68,27 @@ EDA techniques are applied to uncover insights into breast cancer data, such as 
 
 Machine learning models may be constructed to predict breast cancer diagnosis or survival rates based on patient features.
 
-### Logistic Regression
+### Model Training and Evaluation
 
-A logistic regression model may be utilized to predict the likelihood of tumor malignancy based on patient characteristics.
+The dataset is split into training and testing sets using a 70-30 ratio. Then, a logistic regression model is instantiated and train on the training data. After training, the model's performance is evaluated using several metrics:
 
-## Results
+- Accuracy Score: It measures the proportion of correctly classified instances out of the total instances. In this case, the accuracy score is 95.32%.
 
-Insights gained from the analysis provide valuable information for medical professionals, researchers, and policymakers. Understanding breast cancer trends and risk factors can aid in early detection, treatment planning, and public health interventions.
+- Confusion Matrix: It provides a summary of correct and incorrect predictions, showing true positives, true negatives, false positives, and false negatives.
+
+- Precision: Precision measures the ratio of correctly predicted positive observations to the total predicted positives. It reflects the model's ability to avoid false positives. For this model, precision is 96.92%.
+
+- Recall (Sensitivity): Recall calculates the ratio of correctly predicted positive observations to all actual positives. It indicates the model's ability to detect positive instances. Here, recall is 94.44%.
+
+- F1 Score: The F1 score is the harmonic mean of precision and recall, providing a balance between the two metrics. It is 95.66% in this model.
+
+These evaluation metrics collectively demonstrate that our logistic regression model performs well in classifying breast cancer tumors, with high accuracy, precision, recall, and F1 score.
+
+The dataset into training and testing sets, train a logistic regression model on the training data, and evaluate its performance using various metrics such as accuracy, precision, recall, F1-score, and confusion matrix.
+
+## Conclusion
+
+In conclusion, this report highlights the application of logistic regression in breast cancer classification. By leveraging machine learning techniques, we can aid medical professionals in diagnosing breast cancer with high accuracy, thus facilitating timely interventions and improving patient outcomes. Further refinements and optimizations could be explored to enhance the model's performance and generalizability.
 
 
 
