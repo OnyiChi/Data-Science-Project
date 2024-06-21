@@ -12,7 +12,11 @@ This report details the analysis performed on the Airline Passengers dataset, wh
   - passengers
 
 ## Data Visualization
-A line plot was generated to visualize the number of passengers over time.
+
+#### Plot of the number of passengers over time.
+
+![image](https://github.com/OnyiChi/Data-Science-Project/assets/144718639/900668c4-d78f-4223-a5a9-aa8c580ed324)
+
 
 ## Checking Stationarity
 
@@ -84,6 +88,9 @@ A line plot was generated to visualize the number of passengers over time.
 
 - RMSE: 111.11
 
+![image](https://github.com/OnyiChi/Data-Science-Project/assets/144718639/30454b96-4e7c-4f45-b8f4-338390bc1e27)
+
+
 ### Seasonal ARIMA (SARIMA) Model
 
 - A SARIMA(1,1,3)(2,1,2,12) model was fitted to account for seasonality.
@@ -91,11 +98,15 @@ A line plot was generated to visualize the number of passengers over time.
 - Predictions were made and plotted.
 
 - RMSE: 27.50
+  
+![image](https://github.com/OnyiChi/Data-Science-Project/assets/144718639/fa633f4d-10a8-45db-b5ed-38026502e25e)
 
 ## Forecasting
 
 - Future dates from January 1961 to December 1962 were generated.
 - Predictions for these future dates were made using the SARIMA model.
+
+![image](https://github.com/OnyiChi/Data-Science-Project/assets/144718639/e65f4d59-a955-427b-9f3c-7e2d468cfa89)
 
 ## Conclusion
 
